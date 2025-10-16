@@ -1,0 +1,19 @@
+# Crónica – Visualización 01  
+**Autora:** Araceli Meneses  
+**Título:** Dónde se concentra la oferta vegana y vegetariana en Santiago  
+
+---
+
+En la Región Metropolitana, ser vegano también depende del lugar donde vivas. Mientras sectores como Providencia, Santiago Centro y Las Condes concentran la mayor parte de la oferta gastronómica basada en plantas, en el eje sur de la capital —en zonas como San Miguel o La Cisterna— la presencia de estos locales apenas se asoma. El veganismo, más que una tendencia alimentaria, parece dibujar un nuevo límite territorial en Santiago: un mapa donde comer sin carne es, todavía, un privilegio geográfico.  
+
+De los 163 restaurantes veganos, vegetarianos o con opciones *plant based* incluidos en el menú, analizados a partir de datos de TripAdvisor, más de la mitad se concentran entre Providencia (61 locales), Santiago Centro (35) y Las Condes (28). El resto se reparte en pequeños puntos del oriente y el centro urbano, con una presencia marginal y casi inexistente en comunas como La Cisterna, Macul, Recoleta o Colina. Barrios populosos y de menores ingresos como Puente Alto, Maipú o La Pintana ni siquiera figuran en este panorama, lo que evidencia la brecha entre las zonas que adoptan nuevas tendencias gastronómicas y las que siguen ancladas en la alimentación tradicional.  
+
+La visualización refleja esa desigualdad: las barras se acumulan en el cono oriente, donde se ubican territorios de ingresos altos y mejor calidad de vida, como Ñuñoa, Providencia, Las Condes y Vitacura. En esos entornos, llevar una alimentación basada en plantas no representa un lujo, sino una elección posible.  
+
+Aun así, Santiago Centro ocupa un lugar particular dentro de este panorama. Aunque no pertenece al cono oriente ni figura entre las comunas más acomodadas, durante años fue el epicentro del veganismo: en 2013 concentraba el 47% de la oferta gastronómica de la ciudad. Por eso, hace más de una década *La Tercera* la titulaba como “la comuna más vegana de la capital”, gracias a su ubicación céntrica y su cercanía con los barrios universitarios. Hoy ese reconocimiento cambió de manos y se lo lleva Providencia, con casi el doble de locales.  
+
+A nivel latinoamericano, la metrópolis chilena destaca como una de las urbes con mayor oferta de restaurantes veganos. Según un ranking de Veganuary y Happy Cow (2024), ocupa el tercer lugar en el continente. No obstante, ese liderazgo se apoya en un fenómeno concentrado: las zonas que lo impulsan son las mismas del cono oriente y el eje central. El título de “ciudad vegan friendly” descansa, en realidad, sobre un territorio desigual, donde solo algunos sectores reflejan la tendencia que el ranking celebra.  
+
+Hacia la periferia metropolitana las opciones se diluyen. Lugares como San José de Maipo, Colina o La Cisterna apenas registran un local. Esta diferencia revela cómo la alimentación también sigue las líneas de la desigualdad urbana: en los sectores de mayor ingreso, salir a comer un menú vegano o vegetariano es una opción y preferencia; mientras que, en las de menor ingreso, no es la alternativa popular y, por lo mismo, la presencia de estos restaurantes es escasa.  
+
+La concentración de locales con oferta vegetariana y vegana en el cono oriente y en el eje central de Santiago muestra que las decisiones alimentarias también están cruzadas por factores sociales, territoriales y culturales. Llevar una dieta a base de plantas, en la Región Metropolitana, sigue siendo, por ahora, más fácil y popular en ciertos sectores que en otros, lo que explica la mayor oferta gastronómica en esas zonas. Aunque el mapa cambia rápido y continúa expandiéndose, todavía está lejos de convertirse en una opción generalizada que se refleje en toda la capital.  
