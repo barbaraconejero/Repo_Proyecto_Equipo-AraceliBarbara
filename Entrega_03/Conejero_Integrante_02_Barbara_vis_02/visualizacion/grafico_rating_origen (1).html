@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelFontSize": 12, "titleFontSize": 12}, "title": {"anchor": "start", "fontSize": 14}}, "layer": [{"mark": {"type": "bar", "color": "#a3c4f3"}, "encoding": {"x": {"axis": {"labelAngle": -45}, "field": "Origen geogr\u00e1fico", "sort": "-y", "title": "Origen geogr\u00e1fico", "type": "nominal"}, "y": {"field": "Rating", "title": "Rating promedio", "type": "quantitative"}}}, {"mark": {"type": "bar", "color": "#e45755"}, "encoding": {"x": {"field": "Origen geogr\u00e1fico", "type": "nominal"}, "y": {"field": "baseline", "type": "quantitative"}, "y2": {"field": "Rating"}}, "transform": [{"filter": "(datum.Rating > 4.5)"}, {"calculate": "4.5", "as": "baseline"}]}, {"data": {"name": "data-4cff74563fdefd9a04b379b5938a102e"}, "mark": {"type": "rule", "color": "red", "strokeDash": [4, 2]}, "encoding": {"y": {"field": "threshold", "type": "quantitative"}}}], "data": {"name": "data-a151cfc082658e6841af59a1ed116da5"}, "height": 400, "title": "Rating promedio por origen geogr\u00e1fico (destacando > 4.5)", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-a151cfc082658e6841af59a1ed116da5": [{"Origen geogr\u00e1fico": "Asi\u00e1tica", "Rating": 4.225}, {"Origen geogr\u00e1fico": "Asi\u00e1tica y Coreana", "Rating": 4.2}, {"Origen geogr\u00e1fico": "Asi\u00e1tica y Taiwanesa", "Rating": 3.5}, {"Origen geogr\u00e1fico": "Caribe\u00f1a y Latina", "Rating": 4.3}, {"Origen geogr\u00e1fico": "Chilena", "Rating": 4.283333333333333}, {"Origen geogr\u00e1fico": "Chilena y Sudamericana", "Rating": 3.5}, {"Origen geogr\u00e1fico": "China y Asi\u00e1tica", "Rating": 4.1}, {"Origen geogr\u00e1fico": "China y Japonesa", "Rating": 3.9000000000000004}, {"Origen geogr\u00e1fico": "Coreana", "Rating": 4.3}, {"Origen geogr\u00e1fico": "Espa\u00f1ola", "Rating": 4.533333333333334}, {"Origen geogr\u00e1fico": "Espa\u00f1ola y Latinoamericana", "Rating": 4.0}, {"Origen geogr\u00e1fico": "Espa\u00f1ola y Mediterr\u00e1nea", "Rating": 4.5}, {"Origen geogr\u00e1fico": "Europea", "Rating": 4.6}, {"Origen geogr\u00e1fico": "Francesa", "Rating": 4.533333333333333}, {"Origen geogr\u00e1fico": "India", "Rating": 4.51}, {"Origen geogr\u00e1fico": "India y Asi\u00e1tica", "Rating": 3.8499999999999996}, {"Origen geogr\u00e1fico": "India y Chilena", "Rating": 4.7}, {"Origen geogr\u00e1fico": "Italiana", "Rating": 4.4}, {"Origen geogr\u00e1fico": "Italiana y Americana", "Rating": 4.4}, {"Origen geogr\u00e1fico": "Italiana y Latinanoamericana", "Rating": 4.0}, {"Origen geogr\u00e1fico": "Italiana y Sudamericana", "Rating": 3.8}, {"Origen geogr\u00e1fico": "Japonesa", "Rating": 4.4}, {"Origen geogr\u00e1fico": "Japonesa y Peruana", "Rating": 4.725}, {"Origen geogr\u00e1fico": "Japonesa y Tailandesa", "Rating": 3.9}, {"Origen geogr\u00e1fico": "Latinoamericana", "Rating": 4.414285714285714}, {"Origen geogr\u00e1fico": "Marroqu\u00ed y Mediterr\u00e1nea", "Rating": 4.7}, {"Origen geogr\u00e1fico": "Medio Oriente", "Rating": 3.8666666666666667}, {"Origen geogr\u00e1fico": "Mediterr\u00e1nea", "Rating": 4.55}, {"Origen geogr\u00e1fico": "Norteamericana", "Rating": 4.533333333333333}, {"Origen geogr\u00e1fico": "Otra", "Rating": 4.284722222222222}, {"Origen geogr\u00e1fico": "Peruana", "Rating": 4.699999999999999}, {"Origen geogr\u00e1fico": "Peruana y Japonesa", "Rating": 4.3}, {"Origen geogr\u00e1fico": "Tailandesa", "Rating": 4.24}], "data-4cff74563fdefd9a04b379b5938a102e": [{"threshold": 4.5}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
