@@ -10,7 +10,9 @@ El problema fue que, al pasar esta información al gráfico de Python, los datos
 
 Lo que descubrí fue que la oferta asiática, ya sea cocina tailandesa, coreana, japonesa, india, china o fusiones (entre ellas o que incluyen algún tipo de cocina asiática), es ampliamente valorada por los santiaguinos.
 
-Pero para llegar a esa conclusión, el procedimiento en Google Colab fue el siguiente:
+Pero para llegar a esa conclusión, tuve que pasar primero por la creación de un gráfico de barras que me refutó mi hipótesis inicial (la que indidcaba mayor número de restaurantes asiáticos), después por un pictograma que terminé descartando porque la variable de orige geográfico, tanto para el eje x como para el y, quedaba muy largo y poco entendible. Hasta que finalmente revisitandi la librería de Altair llegué a la deicisión de que una gráfico de barras que resaltara los valores más altos.
+
+El procedimiento en Google Colab fue el siguiente:
 
 1. Se cargó la base de datos `base_tripadvisor_visualización_cocina_asiática.csv` utilizando la librería `pandas`.
 2. Se calculó el **promedio de ratings por origen geográfico** para tener un valor representativo de cada categoría.
