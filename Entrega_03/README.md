@@ -1,6 +1,5 @@
 # README – Entrega 03  
 **Equipo:** Araceli Meneses – Bárbara Conejero  
-**Proyecto:** Narración Gráfica de No Ficción (COM-208)  
 **Tema general:** El auge del veganismo en Santiago: entre la expansión de la oferta gastronómica y la desigualdad territorial.
 
 ---
