@@ -43,10 +43,11 @@ En conjunto, ambas visualizaciones muestran que el fenómeno vegano en Santiago 
 
 ## Síntesis de la historia  
 
-El veganismo en Santiago ha dejado de ser una tendencia marginal para consolidarse como un mercado cultural y económico en expansión, concentrado principalmente en ciertos sectores de la metrópolis. Esta distribución revela una relación directa entre la accesibilidad a un estilo de vida y las condiciones socioeconómicas del territorio.
+El veganismo en Santiago ha pasado de ser una tendencia de nicho a consolidarse como parte visible del panorama gastronómico de la ciudad. Su crecimiento, sin embargo, se concentra principalmente en determinados sectores, lo que evidencia una relación entre el acceso a este tipo de oferta y las condiciones socioeconómicas del territorio.
 
-Por un lado, el aumento de restaurantes veganos y vegetarianos refleja la adopción de nuevos hábitos de consumo y el surgimiento de emprendimientos que responden a una demanda creciente por opciones sostenibles.
+El aumento de restaurantes veganos y vegetarianos refleja la adopción de nuevos hábitos de consumo y el surgimiento de emprendimientos que buscan responder a una demanda por opciones más sostenibles y diversas.
 
-Por otro, las visualizaciones muestran que esta transformación no ocurre de manera uniforme, sino que se concentra en barrios de ingresos altos y estilo de vida cosmopolita, donde además se observa una preferencia por cocinas internacionales, especialmente las asiáticas, que destacan por sus altos niveles de valoración. Este patrón sugiere que el auge del veganismo no solo responde a una elección alimentaria, sino también a una búsqueda de experiencias globales y de identidad cultural, en las que el gusto, el estatus y la diversidad gastronómica se entrelazan.
+Las visualizaciones elaboradas muestran que este proceso no es homogéneo: los barrios de mayores ingresos reúnen la mayor cantidad de locales y las mejores valoraciones, al mismo tiempo que se observa una preferencia por cocinas internacionales —especialmente las asiáticas—, que destacan por su alta apreciación entre los comensales.
 
+En conjunto, los datos revelan que el auge del veganismo en Santiago está influido tanto por factores económicos como culturales, donde la alimentación se convierte en una forma de expresión identitaria y social más que en una simple elección dietética.
 
