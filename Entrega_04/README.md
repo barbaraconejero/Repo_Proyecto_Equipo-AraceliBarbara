@@ -15,7 +15,7 @@ El moodboard se centró en transmitir
 
 
 ## Wireframe y prototipo
-* Link: 
+* Link: https://miro.com/app/board/uXjVJruo5Uw=/ 
 
 ### Justificación de la estructura y flujo
 La estructura fue diseñada con el objetivo de ofrecer una experiencia simple, pero completa para el usuario, donde pueda transitar de manera expedita por nuestra historia. El flujo propuesto sigue los pasos naturales del usuario:
