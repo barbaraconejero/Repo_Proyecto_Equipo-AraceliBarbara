@@ -1,0 +1,62 @@
+
+# Ficha técnica de las bases de datos
+
+## 1. Gráfico oferta según comunas
+Nombre del dataset: Tripadvisor_database_limpia.csv  
+Fuente: TripAdvisor (2024), obtenida mediante webscraping.  
+Cobertura geográfica: Santiago, Región Metropolitana de Chile.  
+Número total de registros: 163 restaurantes, bares y cafeterías.
+Año de levantamiento: 2025 
+Formato del archivo: CSV  
+
+### Características de los datos
+
+El conjunto de datos contiene información sobre restaurantes, cafeterías y bares de Santiago con oferta vegana, vegetariana o plant-based. La base fue obtenida mediante webscraping en TripAdvisor y posteriormente limpiada manualmente para eliminar duplicados, corregir valores vacíos y estandarizar los nombres de comunas.
+
+Para la visualización final se trabajó únicamente con las variables relacionadas con la localización y el conteo de restaurantes, con el fin de mostrar la distribución de la oferta vegana y vegetariana por comuna.
+
+### Variables incorporadas
+
+| Variable | Descripción |
+|-----------|-------------|
+| Nombre | Nombre del restaurante registrado en TripAdvisor. Se utilizó solo para contabilizar la cantidad de locales por comuna. |
+| Comuna | Comuna donde se ubica cada restaurante dentro de la Región Metropolitana. Es la variable principal de la visualización. |
+| Cantidad | Total de restaurantes agrupados por comuna. Esta variable fue creada a partir del conteo con value_counts() en pandas. |
+
+### Observaciones
+
+- Se detectó un registro sin información en la columna Comuna correspondiente al restaurante “Mamma Lucia”. Este fue verificado manualmente en Google Maps y clasificado en la comuna de Colina.  
+- Se estandarizaron los nombres de comunas para evitar duplicidades (por ejemplo, “Ñuñoa” en lugar de “Nunoa”).  
+- La base no presenta valores nulos en las columnas utilizadas para la visualización.  
+- El gráfico final representa el número de restaurantes por comuna, ordenados de mayor a menor, mostrando la concentración de la oferta vegana y vegetariana en el cono oriente de Santiago.  
+- Los datos corresponden al estado de TripAdvisor al primer semestre de 2024.
+
+## 2. Gráfico ranking restaurantes veganos
+Nombre del dataset: Tripadvisor_database_limpia.csv  
+Fuente: TripAdvisor (2024), obtenida mediante webscraping.  
+Cobertura geográfica: Santiago, Región Metropolitana de Chile.  
+Número total de registros: 152 restaurantes.
+Año de levantamiento: 2025 
+Formato del archivo: CSV  
+
+### Características de los datos
+
+El conjunto de datos contiene información únicamente sobre restaurantes, ya que se uso como punto de referencia la muestra de 3.950 restaurantes que Tripadvisor contempla en su ranking, siendo las cafeterías y bares excluidas de este ranking. La base fue obtenida mediante webscraping en TripAdvisor y posteriormente limpiada manualmente para eliminar duplicados, corregir valores vacíos y estandarizar los nombres de comunas.
+
+Para la visualización final se trabajó con las variables de rating, ranking en Santiago y tipo de local.
+
+### Variables incorporadas
+
+| Variable | Descripción |
+|-----------|-------------|
+| Nombre | Nombre del restaurante registrado en TripAdvisor. Se utilizó para contabilizar la cantidad de locales veganos dentro del ranking. |
+| Rating | Evaluación que los usuarios le entregan a cada restaurante en una escala de 1 a 5. |
+| Ranking en Santiago | Se utilizó como medida de referencia para saber en qué posición estaba cada restaurante de la muestra total de 3.950 que están en el ranking. |
+| Tipo de local | Se utilizó para limpiar la base e identificar únicamente restaurantes. |
+
+### Observaciones
+- El gráfico permite identificar un fenómeno clave: los restaurantes veganos no solo están representados en el ranking, sino que algunos ocupan lugares destacados, con varios de ellos ubicados dentro del top 10 general. Esto se observa inmediatamente porque existen marcas en el extremo derecho del eje, donde el rango es más competitivo.
+
+- La gran mayoría está dentro del top 200, a pesar que representan alrededor del 4% de la muestra. Lo que puede llevar a conclusiones de que más que la cantidad lo que importa es la calidad.
+
+- Dentro de los restaurantes veganos también están contemplados los "no tradicionalmente veganos" que, en general, corresponden a restaurantes de cadena. Lo que puede indicar que los restaurantes nuevos han tenido que adoptar estas opciones para ser más competitivos dentro del mercardo gastronómico.
