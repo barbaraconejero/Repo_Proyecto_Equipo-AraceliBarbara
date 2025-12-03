@@ -60,3 +60,27 @@ Para la visualización final se trabajó con las variables de rating, ranking en
 - La gran mayoría está dentro del top 200, a pesar que representan alrededor del 4% de la muestra. Lo que puede llevar a conclusiones de que más que la cantidad lo que importa es la calidad.
 
 - Dentro de los restaurantes veganos también están contemplados los "no tradicionalmente veganos" que, en general, corresponden a restaurantes de cadena. Lo que puede indicar que los restaurantes nuevos han tenido que adoptar estas opciones para ser más competitivos dentro del mercardo gastronómico.
+
+## 3. Visualización mapa de oferta gastronómica vegana en Santiago con datos de TripAdvisor
+Nombre del dataset: restorants
+Fuente: TripAdvisor (2024), obtenida mediante webscraping.
+Cobertura geográfica: Santiago, Región Metropolitana de Chile. 
+Número total de registros: 180 restaurantes, bares y cafeterías.
+Año de levantamiento: 2025
+Formato del archivo: CSV
+
+### Características de los Datos: 
+El conjunto de datos contiene información sobre restaurantes, cafeterías y bares en Santiago que ofrecen opciones veganas o vegetarianas. La base fue obtenida mediante webscraping desde TripAdvisor y posteriormente limpiada manualmente para eliminar duplicados, corregir valores vacíos y estandarizar nombres de comunas. 
+
+Para la visualización final, se trabajó únicamente con las variables relacionadas con la localización y el conteo de restaurantes, con el objetivo de mostrar la distribución de la oferta vegana y vegetariana por comuna. 
+
+### Variables incorporadas
+| Variable  | Descripción |
+|-----------|-------------|
+| **Dirección** | Dirección completa de cada restaurante. Utilizada para identificar la ubicación de cada local. |
+| **Latitud** | Coordenada geográfica (latitud) del restaurante. |
+| **Longitud** | Coordenada geográfica (longitud) del restaurante. |
+
+### Observaciones 
+- Se estandarizaron las direcciones y nombres de las comunas para evitar duplicidades en los registros.
+- Los datos fueron obtenidos directamente de TripAdvisor a través de webscraping y reflejan la oferta gastronómica vegana y vegetariana disponible en Santiago al primer semestre de 2024.
