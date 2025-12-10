@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ruta Vegana</title>
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+</head>
+
+<body>
+
+<!-- ============================================================
+   HERO PRINCIPAL
+============================================================ -->
+<header class="hero">
+
+    <div class="title-container">
+        <h1 class="title-massive">
+            LA RUTA 
+            <img src="assets/images/icono-zanahoria.png" class="title-icon" alt="icono zanahoria">
+            VEGANA
+        </h1>
+    </div>
+
+    <div class="sticker-deck">
+        <div class="sticker lemon">NO SÉ DÓNDE HAY BUENOS RESTAURANTES VEGANOS EN SANTIAGO.</div>
+        <div class="sticker banana">NO HAY OFERTA GASTRONÓMICA VEGANA EN LA CAPITAL.</div>
+        <div class="sticker eco">ME GUSTARÍA CONOCER LUGARES VEGANOS BBB.</div>
+        <div class="sticker burst">QUIERO BUENAS RECOMENDACIONES DE COMIDA ASIÁTICA.</div>
+        <div class="sticker banana">NO SÉ A QUÉ RESTAURANTES IR CON MIS AMIGOS NO VEGANOS.</div>
+        <div class="sticker lemon">QUIERO IR A LOS LUGARES VEGANOS MEJOR RANKEADOS.</div>
+    </div>
+
+    <div class="search-wrapper">
+        <input id="search-blocked" type="text" placeholder="" disabled>
+        <button class="search-btn" onclick="scrollToNextSection()">🔍</button>
+    </div>
+
+</header>
+
+
+
+<!-- ============================================================
+   SECCIÓN 1 — INTRO
+============================================================ -->
+<section id="seccion2" class="intro-section">
+    <div class="intro-text">
+        Sabemos que ser vegano en Santiago es una decisión que cada vez más personas están tomando.
+    </div>
+</section>
+
+
+
+<!-- ============================================================
+   SECCIÓN 2 — VERDE
+============================================================ -->
+<section class="veggie-section" id="veggie-intro">
+
+    <div class="veggie-text">
+        <p>
+            Y aunque todavía hay quienes dicen que lo vegano es “aburrido”, “caro” o “para unos pocos”, 
+            quienes hemos probado sus sabores sabemos que no es así: que hay texturas inesperadas,
+            condimentos audaces y platos que compiten, sin pedir permiso, con cualquier clásico tradicional.
+        </p>
+
+        <p>
+            Hoy, más que nunca, ser vegano es también ser explorador culinario: perderse por barrios,
+            descubrir picadas nuevas y repetir locales favoritos.
+        </p>
+    </div>
+
+</section>
+
+
+
+<!-- ============================================================
+   SECCIÓN 3 — EDITORIAL NARANJA
+============================================================ -->
+<section id="seccion-naranja" class="orange-section">
+
+    <div class="orange-container">
+
+        <h2 class="orange-title">¿CÓMO EMPEZÓ LA RUTA VEGANA EN SANTIAGO?</h2>
+
+        <p class="orange-body">
+            Antes de hablar de sabores, hay que mirar para atrás. Porque toda revolución gastronómica empieza con un cambio silencioso:
+            aparecen nuevas marcas, surgen emprendimientos pequeños, se multiplica la oferta en ferias, deliverys, cafés de barrio y
+            cocinas que no temen experimentar.
+        </p>
+
+        <p class="orange-body">
+           Pero ¿cómo sabemos que este crecimiento no es solo intuición?
+Para entender la magnitud de este fenómeno, hay que mirar el lugar donde toda marca nace: INAPI, el registro oficial de propiedad industrial en Chile. Allí es donde se inscriben las nuevas propuestas, donde se anuncian tendencias y donde aparecen, a veces sin que nadie las note, los primeros indicios de un cambio cultural.
+Este gráfico muestra cómo han evolucionado, entre 2009 y 2025, las marcas veganas registradas en INAPI, comparadas con una categoría tradicional como las hamburgueserías. Analizar este comportamiento nos permite entender si el crecimiento vegano es real, sostenido y competitivo frente a otro segmento alimentario fuerte en Chile.
+        </p>
+
+        <div class="flourish-embed flourish-chart" data-src="visualisation/26729089"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26729089/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
+            <p class="chart-description">
+                Este gráfico no busca medir todo el mercado, sino identificar señales tempranas del interés empresarial: cuántas marcas aparecen, cómo varían año a año y qué categoría muestra mayor dinamismo. Al observar la curva, la tendencia es clara: la categoría vegana comienza a aparecer con fuerza desde 2015, pero su crecimiento no es lineal ni estable, sino más bien irregular, con subidas y caídas sucesivas. Tras un alza inicial en 2015, la categoría cae en 2016, vuelve a repuntar hacia 2018 y luego alcanza su peak en 2020.
+
+Aunque las hamburgueserías siguen mostrando un mayor volumen, lo llamativo es que en 2020 las marcas veganas alcanzan su punto más alto y superan por única vez a la categoría hamburguesa. Este salto coincide con la pandemia y con un cambio en los hábitos de consumo: muchas personas comenzaron a adoptar dietas vegetarianas, mientras las marcas respondían ampliando su oferta con productos plant-based más que con servicios gastronómicos.
+
+Más allá de ese peak puntual, lo que revela este comportamiento irregular pero ascendente es que las marcas veganas se están diversificando y comienzan a posicionarse dentro del mercado alimentario chileno. Una tendencia que hoy se refleja claramente en las calles de Santiago, donde la oferta vegana es más amplia, visible y cotidiana que nunca.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ============================================================
+   SECCIÓN BEIGE — INTRO
+============================================================ -->
+<section id="seccion-mapa" class="beige-section">
+
+    <div class="beige-container">
+        <p class="beige-text">
+            Y así como las marcas veganas fueron tomando fuerza en el mercado chileno, Tripadvisor también fue testigo de ello. 
+            El sitio web favorito para buscar restaurantes hoy cuenta con 165 restaurantes, cafeterías y bares vegetarianos, 
+            veganos y con opciones veganas en Santiago. Pero toda escena gastronómica tiene pioneros que marcaron el camino antes del boom.
+        </p>
+    </div>
+
+
+<!-- ============================================================
+     BLOQUE RESTAURANTES HISTÓRICOS
+============================================================ -->
+<div class="restaurantes-historicos">
+
+    <!-- ============================
+         EL NATURISTA
+    ============================ -->
+    <div class="rest-box naranja">
+        <h3 class="rest-title">El Naturista: un clásico vegetariano</h3>
+        <span class="rest-year">(1927)</span>
+
+        <p class="rest-desc">
+            La última vez que habíamos pasado por El Naturista fue cuando todavía funcionaba como frutería. Volvimos con la intención de entender cuánto de su espíritu original seguía presente. En sus sitio web aún se cita el naturismo como una respuesta a la "vida artificial" y una invitación a volver a las verduras, frutas y granos. Esta idea se percibe apenas uno entra al local de Moneda 846, con sus jugueras alineadas detrás del mesón y clientes que parecen conocer el menú de memoria. Los jugos naturales siguen siendo el corazón del lugar, su fundador los llamaba "el lubricante humano", y el clásico de naranja con zanahoria confirma por qué.
+        </p>
+
+        <button class="veredicto-btn" onclick="openModal('modal-naturista')">
+            Veredicto final
+        </button>
+    </div>
+
+    <!-- Modal Naturista -->
+    <div id="modal-naturista" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-naturista')">&times;</span>
+            <h3>Veredicto Final: El Naturista</h3>
+            <ul>
+                <li><strong>Precio:</strong> ★★★★★</li>
+                <li><strong>Sabor:</strong> ★★★★☆</li>
+                <li><strong>Tiempo de espera:</strong> ★★★★☆</li>
+                <li><strong>Ambiente:</strong> ★★★★☆</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- ============================
+         EL HUERTO
+    ============================ -->
+    <div class="rest-box verde">
+        <h3 class="rest-title">El Huerto: apreciado internacionalmente</h3>
+        <span class="rest-year">(1980)</span>
+
+        <p class="rest-desc">
+            La última vez que habíamos entrado al restaurante de Orrego Luco 054 lo hicimos en realidad para comprar unoz zapatos en la tienda que funcionaba en su interior. Es decir, hace muchos años. Por lo mismo, decidimos visitarlos la semana pasada a la hora de almuerzo. Estaba lleno de oficinistas y jóvenes. Fuimos directo a la carta: probamos el plato Nuevo México, una de las recomendaciones del mesero, aunque también nos tentaron un par de platos hindúes. Lo acompañamos con una ensalada y, ya que estábamos ahí, nos dimos el gusto de pedir uno de sus cócteles de autor: el Diane Keaton.
+        </p>
+
+        <button class="veredicto-btn" onclick="openModal('modal-huerto')">
+            Veredicto final
+        </button>
+    </div>
+
+    <!-- Modal Huerto -->
+    <div id="modal-huerto" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-huerto')">&times;</span>
+            <h3>Veredicto Final: El Huerto</h3>
+            <ul>
+                <li><strong>Precio:</strong> ★★★☆☆</li>
+                <li><strong>Sabor:</strong> ★★★★★</li>
+                <li><strong>Tiempo de espera:</strong> ★★★☆☆</li>
+                <li><strong>Ambiente:</strong> ★★★★☆</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- ============================
+         VEGAN BUNKER
+    ============================ -->
+    <div class="rest-box naranja">
+        <h3 class="rest-title">Vegan Bunker: el primero en Chile</h3>
+        <span class="rest-year">(2012)</span>
+
+        <p class="rest-desc">
+            Teníamos ganas de una hamburguesa como las que solo el primer restaurante 100% vegano de Chile. Casi se nos había olvidado lo perfectas que pueden ser unas papas fritas caseras bien hechas. Pudimos haber optado por el menú del día, que nunca supera los $6.000 y ofrece esa comida casera salida de la cocina de tu abuela, pero esta vez el antojo nos ganó. Lo que siempre soprende del Bunker es que, pese a estar en pleno Barrio Italia, tiene precios accesibles. A veces, a la hora de almuerzo, se llena y hay que esperar un poco para encontrar mesa, pero la comida sale rápido. Quizás si abrieran antes de las 13:00 les iría mejor.
+        </p>
+
+        <button class="veredicto-btn" onclick="openModal('modal-bunker')">
+            Veredicto final
+        </button>
+    </div>
+
+    <!-- Modal Bunker -->
+    <div id="modal-bunker" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-bunker')">&times;</span>
+            <h3>Veredicto Final: Vegan Bunker</h3>
+            <ul>
+                <li><strong>Precio:</strong> ★★★★★</li>
+                <li><strong>Sabor:</strong> ★★★★☆</li>
+                <li><strong>Tiempo de espera:</strong> ★★★★★</li>
+                <li><strong>Ambiente:</strong> ★★★☆☆</li>
+            </ul>
+        </div>
+    </div>
+
+</div> <!-- Fin columnas -->
+
+
+
+<!-- ============================================================
+     TEXTO NUEVO ANTES DEL MAPA  (AÑADIDO AQUÍ)
+============================================================ -->
+<div class="beige-container">
+    <p class="beige-text">
+        Pasear por el eje Alameda-Providencia es, para un vegano, lo más cercano a estar en Londres o Berlín,
+        capitales veganas del mundo. Santiago Centro, Providencia, Las Condes y Vitacura forman el cuadrante
+        donde el veganismo encontró su terreno más fértil. No es casualidad: mayor flujo, más comercio,
+        más diversidad cultural y una clientela dispuesta a probar sabores nuevos.
+    </p>
+  <!-- NUEVO PÁRRAFO EDITORIAL -->
+
+ 
+
+
+
+
+
+<!-- ============================================================
+     MAPA + GRÁFICO
+============================================================ -->
+<div class="beige-container">
+
+<div class="flourish-map-box">
+    <div class="flourish-embed flourish-map" data-src="visualisation/26729436">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <noscript>
+            <img src="https://public.flourish.studio/visualisation/26729436/thumbnail" width="100%" alt="map visualization" />
+        </noscript>
+    </div>
+</div>
+
+<p class="green-body-large">
+    Si tienes una tarde libre, basta caminar tres cuadras por Merced para entender por qué aquí nació uno de los circuitos veganos más antiguos de la ciudad. No solo son sus restaurantes pequeños y juguerías clásicas: es el flujo. Santiago Centro es una comuna “flotante”, donde estudiantes, oficinistas, turistas y trabajadores se mezclan en un tránsito permanente que mantiene viva la demanda durante todo el día. Por eso Merced, Lastarria y Huérfanos funcionan como corredores gastronómicos naturales: calles donde siempre hay alguien almorzando entre reuniones, tomando un jugo antes de clase o buscando una opción rápida y vegetal entre museos, universidades, oficinas públicas y hoteles.
+</p>
+
+<p class="green-body-large">
+    Providencia también se sostiene en esa lógica de circulación constante. Manuel Montt concentra oficinas, institutos, coworks y cafés de autor, lo que genera un público diverso que se mueve a pie y exige opciones más ligeras y saludables. Av. Italia suma otro flujo: el de estudiantes, creativos y trabajadores del diseño que transitan entre talleres, librerías y cafeterías experimentales. Y cuando el día necesita una pausa, Orrego Luco y Santa Magdalena —dos calles cortas y densas— funcionan como un pequeño laboratorio gastronómico, alimentado por el tránsito de profesionales que bajan a almorzar, turistas que pasean el sector hotelero y residentes jóvenes que buscan cocina de autor sin pretensiones.
+</p>
+
+<p class="green-body-large">
+    Hacia el oriente, la movilidad cambia pero no disminuye. Isidora Goyenechea es el corazón de un distrito financiero que atrae miles de personas cada día, lo que convierte a sus terrazas y restaurantes luminosos en un polo natural para opciones veganas “business-friendly”. Más al sur, Apoquindo y Kennedy mantienen un ritmo práctico —almuerzos breves, clientela laboral, comercio intenso— pero con menú vegetal cada vez más sólido. Vitacura, en cambio, ofrece la contracara: un flujo más pausado y de fin de semana, asociado a Parque Bicentenario, cafés de brunch y cocinas limpias que entienden lo vegetal como parte de una experiencia estética. Es un recorrido donde caminar sin apuro con un jugo o un matcha en la mano forma parte del encanto.
+</p>
+
+
+    <div class="final-chart-box">
+        <img src="assets/images/oferta-comunas.png" alt="Oferta por comuna" class="final-chart">
+
+
+</div>
+<p class="green-body-large">
+    A diferencia de lo que muchos imaginan, la Ñuñoa vegana no se despliega en grandes corredores 
+    gastronómicos, sino en pequeños núcleos como Plaza Egaña y el eje Dr. Johow, ambos ligados 
+    históricamente a un público joven y culturalmente activo. Durante el estallido social surgió el 
+    término “ñuñoino”, una etiqueta que describía a ese perfil progresista, alternativo y urbano 
+    que se congregó en la comuna: mezcla de conciencia política, estética indie y hábitos cotidianos 
+    ligados al bienestar. En ese contexto, Ñuñoa se volvió un terreno fértil para que lo vegano se 
+    integrara con naturalidad, no como una moda pasajera, sino como parte coherente de su identidad 
+    sociocultural.
+</p>
+
+</section>
+
+<!-- ============================================================
+   SECCIÓN: ¿A QUÉ SABE LO VEGANO?
+============================================================ -->
+<section id="seccion-sabores" class="orange-section">
+
+    <div class="orange-container">
+
+        <h2 class="orange-title">¿A qué sabe lo vegano?</h2>
+
+        <p class="orange-body">
+            La oferta vegana en Santiago no solo crece: se diversifica. Cada comuna aporta su propio acento,
+            moldeado por su flujo urbano, su público habitual y sus circuitos gastronómicos. Para entender
+            cómo se expresa ese sabor, analizamos los tipos de cocina que predominan en cada sector.
+        </p>
+
+        <!-- Visualización Flourish -->
+        <div class="chart-wrapper">
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/26731834">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/26731834/thumbnail" 
+                         width="100%" alt="hierarchy visualization" />
+                </noscript>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ============================================================
+   FICHAS POR COMUNA — ESTILO BEIGE
+============================================================ -->
+<section id="fichas-sabores" class="orange-section">
+
+<div class="beige-container">
+
+    <!-- ============================
+         SANTIAGO CENTRO
+    ============================ -->
+    <h1 class="beige-subtitle">Santiago Centro</h1>
+    <p class="beige-text">
+        Ofrece la combinación más variada: cocina peruana, chilena, latinoamericana, sushi, ramen 
+    y comida china se repiten entre los locales registrados. La diversidad responde a su carácter de comuna flotante, donde oficinas, 
+    universidades y turismo sostienen una demanda constante por opciones rápidas, económicas y adaptables a distintos perfiles.
+    </p>
+  <p class="beige-text">
+        Te dejamos nuestros favoritos:
+    </p>
+
+    <div class="fichas-grid">
+
+        <!-- Restaurante 1 -->
+        <div class="ficha">
+            <h4 class="ficha-title">Verde Que Te Quiero Verde en Huérfanos 3020</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/verdequetequieroverde-santiago-centro-1.jpg" class="carousel-img">
+                    <img src="assets/images/verdequetequieroverde-santiago-centro-2.jpg" class="carousel-img">
+                    <img src="assets/images/verdequetequieroverde-santiago-centro-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Restaurante 2 -->
+        <div class="ficha">
+            <h4 class="ficha-title">El Naturista en Moneda 846</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/el-naturista-santiago-centro-1.jpg" class="carousel-img">
+                    <img src="assets/images/el-naturista-santiago-centro-2.jpg" class="carousel-img">
+                    <img src="assets/images/el-naturista-santiago-centro-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Restaurante 3 -->
+        <div class="ficha">
+            <h4 class="ficha-title">Amadeus en Av. General Bustamante 50</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/amadeus-santiago-centro-1.jpg" class="carousel-img">
+                    <img src="assets/images/amadeus-santiago-centro-2.jpg" class="carousel-img">
+                    <img src="assets/images/amadeus-santiago-centro-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ============================
+         PROVIDENCIA
+    ============================ -->
+    <h3 class="beige-subtitle">Providencia</h3>
+    <p class="beige-text">
+         Mezcla brunch, sushi, ramen, cafés de autor y cocina saludable. La base de 
+    datos muestra con frecuencia categorías como “internacional” y “saludable”, coherentes con el público que circula entre 
+    coworks, comercio, oficinas creativas y vida nocturna ligera. Es una comuna donde lo vegano se volvió parte de la rutina urbana.
+    </p>
+ <p class="beige-text">
+        Te dejamos nuestros favoritos:
+    </p>
+    <div class="fichas-grid">
+
+        <div class="ficha">
+            <h4 class="ficha-title">El Huerto en Orrego Luco 054</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/el-huerto-providencia-1.jpg" class="carousel-img">
+                    <img src="assets/images/el-huerto-providencia-2.jpg" class="carousel-img">
+                    <img src="assets/images/el-huerto-providencia-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="ficha">
+            <h4 class="ficha-title">Verde Sazón en Miguel Claro 1873</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/verde-sazon-providencia-1.jpg" class="carousel-img">
+                    <img src="assets/images/verde-sazon-providencia-2.jpg" class="carousel-img">
+                    <img src="assets/images/verde-sazon-providencia-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="ficha">
+            <h4 class="ficha-title">Bao Bar en Av. Manuel Montt 925</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/bao-providencia-1.jpg" class="carousel-img">
+                    <img src="assets/images/bao-providencia-2.jpg" class="carousel-img">
+                    <img src="assets/images/bao-providencia-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ============================
+         LAS CONDES
+    ============================ -->
+    <h3 class="beige-subtitle">Las Condes</h3>
+    <p class="beige-text">
+        Se orienta hacia cocinas mediterráneas, internacionales, fusiones contemporáneas y sushi, con 
+    fuerte presencia de restaurantes que trabajan estética y limpieza visual en sus platos. La demanda laboral del sector moldea una oferta vegetal más técnica y “business-friendly”.
+    </p>
+<p class="beige-text">
+        Te dejamos nuestros favoritos:
+    </p>
+    <div class="fichas-grid">
+
+        <div class="ficha">
+            <h4 class="ficha-title">Quimey Sushi Fusion en Apoquindo 3161 Local 17</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/quimey-lascondes-1.jpg" class="carousel-img">
+                    <img src="assets/images/quimey-lascondes-2.jpg" class="carousel-img">
+                    <img src="assets/images/quimey-lascondes-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="ficha">
+            <h4 class="ficha-title">Lila Restaurante EN Roger De Flor 2770</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/lila-lascondes-1.jpg" class="carousel-img">
+                    <img src="assets/images/lila-lascondes-2.jpg" class="carousel-img">
+                    <img src="assets/images/lila-lascondes-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="ficha">
+            <h4 class="ficha-title">Falafel Asly en Avenida Las Condes 8400</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/falafel-lascondes-1.jpg" class="carousel-img">
+                    <img src="assets/images/falafel-lascondes-2.jpg" class="carousel-img">
+                    <img src="assets/images/falafel-lascondes-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ============================
+         VITACURA
+    ============================ -->
+    <h3 class="beige-subtitle">Vitacura</h3>
+    <p class="beige-text">
+        Destacan brunchs, cafeterías, cocina mediterránea y propuestas saludables. La base revela alta 
+    presencia de cocina internacional y contemporánea, alineada con un público que prioriza la experiencia: terrazas, ambientes 
+    cuidados y platos vegetales pensados para maridar bienestar y estética.
+    </p>
+<p class="beige-text">
+        Te dejamos nuestros favoritos:
+    </p>
+    <div class="fichas-grid">
+
+        <div class="ficha">
+            <h4 class="ficha-title">Pita House en Av. Vitacura 5480</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/pitahouse-vitacura-1.jpg" class="carousel-img">
+                    <img src="assets/images/pitahouse-vitacura-2.jpg" class="carousel-img">
+                    <img src="assets/images/pitahouse-vitacura-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="ficha">
+            <h4 class="ficha-title">Rishtedar en Av. Vitacura 5461</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/rishtedar-vitacura-1.jpg" class="carousel-img">
+                    <img src="assets/images/rishtedar-vitacura-2.jpg" class="carousel-img">
+                    <img src="assets/images/rishtedar-vitacura-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="ficha">
+            <h4 class="ficha-title">Quinoa en Av. Luis Pasteur 5393</h4>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="assets/images/quinoa-vitacura-1.jpg" class="carousel-img">
+                    <img src="assets/images/quinoa-vitacura-2.jpg" class="carousel-img">
+                    <img src="assets/images/quinoa-vitacura-3.jpg" class="carousel-img">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+<!-- ============================================================
+   SECCIÓN FINAL
+============================================================ -->
+<section id="seccion-ranking" class="green-section">
+
+    <div class="green-container">
+
+        <h2 class="ranking-title">
+            Entre una diversidad de opciones, elegir se vuelve un desafío. 
+            Pero quienes ya visitaron estos lugares dejaron una pista clara: sus calificaciones.
+        </h2>
+
+        <p class="ranking-text">
+            Tripadvisor registra 3.950 restaurantes en Santiago. 
+            De ellos, solo 152 son veganos, vegetarianos o con opciones veganas: 
+            menos del 4% del total.
+        </p>
+    </div>
+    <div class="green-container">
+        <img src="assets/images/grafico-ranking.png" alt="Gráfico de ranking de restaurantes veganos" class="ranking-chart">
+    </div>
+        <p class="ranking-text">
+            Aun así, la mayoría se concentra dentro de los primeros 800 puestos 
+            del ranking general y varios superan el puesto 500, ubicándose dentro 
+            del 20% superior de la oferta gastronómica capitalina.
+        </p>
+
+
+
+</section>
+
+<section id="receipt-section" class="receipt-section">
+
+    <div class="receipt-box">
+
+    <h2 class="receipt-title">Vegan Report Tripadvisor Santiago</h2>
+    <div class="receipt-dots"></div>
+
+    <h3 class="receipt-text"><strong>🍃 Chilean Brunch – Nº 1 en Santiago</strong></h3>
+    <p class="stars">★★★★★</p>
+    <p class="receipt-text">Ubicación: Recoleta</p>
+    <p class="receipt-text"><em>“Comida deliciosa y servicio excepcional.”</em></p>
+
+    <div class="receipt-dots"></div>
+
+    <h3 class="receipt-text"><strong>🍃 Casa Sanz – Nº 3 en Santiago</strong></h3>
+    <p class="stars">★★★★★</p>
+    <p class="receipt-text">Ubicación: Vitacura</p>
+    <p class="receipt-text"><em>“Siempre destaca entre los mejores.”</em></p>
+
+    <div class="receipt-dots"></div>
+
+    <h3 class="receipt-text"><strong>🍃 Tanaka – Nº 7 en Santiago</strong></h3>
+    <p class="stars">★★★★★</p>
+    <p class="receipt-text">Ubicación: Vitacura</p>
+    <p class="receipt-text"><em>“Muy buena atmósfera y recepción.”</em></p>
+
+    <div class="receipt-dots"></div>
+
+    <h3 class="receipt-text"><strong>🍃 Krossbar Orrego Luco – Nº 8 en Santiago</strong></h3>
+    <p class="stars">★★★★☆</p>
+    <p class="receipt-text">Ubicación: Providencia</p>
+    <p class="receipt-text"><em>“Gran variedad de cervezas y comida espectacular.”</em></p>
+
+    <div class="receipt-dots"></div>
+
+    <h3 class="receipt-text"><strong>🍃 Zanzíbar – Nº 9 en Santiago</strong></h3>
+    <p class="stars">★★★★★</p>
+    <p class="receipt-text">Ubicación: Vitacura</p>
+    <p class="receipt-text"><em>“Menú excelente, ambientación 10/10.”</em></p>
+
+</div>
+
+
+</section>
+
+<p class="ranking-text">
+    Al observar el ranking general de Santiago, aparece un patrón que dice mucho sobre las preferencias actuales: 
+    los restaurantes mejor posicionados no son solo los que dominan una especialidad, sino aquellos que amplían su carta 
+    para incluir opciones veganas y vegetarianas. La diversidad alimentaria se convierte en un valor agregado. 
+    Los establecimientos que ofrecen alternativas para distintas dietas —desde plant-based hasta vegetarianas— 
+    tienden a recibir mejores calificaciones y a ubicarse más arriba en el ranking. 
+    En un escenario donde la competencia gastronómica es alta, la capacidad de adaptarse a distintos públicos 
+    parece marcar la diferencia.
+</p>
+<footer class="footer-ruta">
+    <div class="footer-container">
+      <p>por Araceli Meneses y Bárbara Conejero</p>
+        <p>2025-2 Narración Gráfica de No Ficción</p>
+        <p>
+            <a href="https://github.com/barbaraconejero/Repo_Proyecto_Equipo-AraceliBarbara" target="_blank">
+                https://github.com/barbaraconejero/Repo_Proyecto_Equipo-AraceliBarbara
+            </a>
+        </p>
+    </div>
+</footer>
+
+<script src="script.js?v=4"></script> 
+<script src="carousel.js"></script> 
+</body>
+</html>
+
+
+
+<script src="assets/javascripts/javascript1.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
