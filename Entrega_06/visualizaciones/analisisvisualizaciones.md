@@ -8,6 +8,9 @@ Esta visualización, basada en los datos extraídos del INAPI, busca situar el f
 •	Mapa de la oferta gastronómica vegana (TripAdvisor):
 A partir de la base de datos obtenida mediante webscrapping en TripAdvisor, esta visualización muestra la distribución territorial de los restaurantes veganos, vegetarianos o con opciones plant-based en la Región Metropolitana. El mapa busca comunicar la geografía del fenómeno, evidenciando las zonas de mayor concentración y cómo el eje Alameda-Providencia actúa como línea neurálgica de locales y servicios. Además, incluirá un sistema de colores que diferencia el tipo de establecimiento y tipo de comida, facilitando la exploración del usuario en su búsqueda por un lugar donde comer.
 
+•	Gráfico concentración de restaurantes, cafeterías y bares en comunas: 
+Este gráfico permite identificar cuáles son las comunas con mayor cantidad de oferta gastronómica vegana en Santiago. 
+
 •	Gráfico sobre tipos de cocina predominantes entre los restaurantes veganos: 
 Complementando el mapa anterior, este gráfico muestra qué estilos culinarios dominan dentro de la oferta vegana (asiática, chilena, fusión, internacional). Busca dar cuenta de las preferencias gastronómicas y culturales que moldean la oferta plant-based, así como la diversidad y globalización del fenómeno.
 
@@ -16,4 +19,5 @@ Esta visualización responde la pregunta: ¿Qué tan bien evaluados están los r
 
 •	Visualización de los Top 5 mejores restaurantes veganos de Tripadvisor:
 Se incorporó nuestra recomendación de los 5 mejores restaurantes vegetarianos, veganos y con opciones veganas presentes en nuestra base de datos de TripAdvisor. 
+
 
