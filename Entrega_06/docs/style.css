@@ -1,0 +1,798 @@
+/* ============================================================
+   RESET GENERAL
+============================================================ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #143B24;
+    font-family: 'Figtree', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+/* ============================================================
+   HEADER HERO
+============================================================ */
+.hero {
+    padding: 50px 20px 90px;
+    background-color: #1E5A33;
+    text-align: center;
+    position: relative;
+}
+
+
+
+/* ============================================================
+   TÍTULO PRINCIPAL
+============================================================ */
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.title-massive {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 7vw;
+    letter-spacing: 1.5vw;
+    margin: 0;
+    color: #ffb347;
+    display: flex;
+    align-items: center;
+    gap: 2.8vw;
+    white-space: nowrap;
+}
+
+.title-icon {
+    width: 11vw;
+    filter: hue-rotate(-20deg) brightness(1.4) saturate(1.4);
+}
+
+
+
+/* ============================================================
+   STICKERS
+============================================================ */
+.sticker-deck {
+    width: 100%;
+    padding: 90px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sticker {
+    width: 260px;
+    height: 180px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(var(--rot, 0));
+    border-radius: 50% / 40%;
+    transition: transform 0.35s, box-shadow 0.35s;
+}
+
+.sticker.center { transform: translate(-50%, -50%) scale(1.1); z-index: 20; }
+.sticker.left { transform: translate(calc(-50% - 220px), -50%) rotate(-8deg); }
+.sticker.right { transform: translate(calc(-50% + 220px), -50%) rotate(8deg); }
+
+.sticker:hover {
+    transform: scale(1.15) rotate(0);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.35);
+}
+
+.lemon { background:#FFEB3B; border:4px solid #2E7D32; color:#2E7D32; }
+.banana { background:#039BE5; border:4px solid #FDD835; color:white; }
+.burst { background:#004D40; border:4px dashed #4DB6AC; color:white; }
+
+.eco {
+    width: 280px;
+    min-height: 120px;
+    padding: 22px 30px;
+    background:white;
+    border:4px solid #C62828;
+    border-radius: 28px;
+    color:#0D47A1;
+}
+
+
+
+/* ============================================================
+   SEARCH BAR
+============================================================ */
+.search-wrapper {
+    margin-top: 80px;
+    width: 90%;
+    max-width: 1400px;
+    margin-inline: auto;
+    position: relative;
+}
+
+.search-wrapper input {
+    width: 100%;
+    padding: 22px;
+    border-radius: 40px;
+    background: #f3f3f3;
+    border: none;
+    font-size: 20px;
+    color: #666;
+}
+
+.search-btn {
+    position: absolute;
+    right: 3%;
+    top: 11px;
+    height: 52px;
+    width: 52px;
+    background: #ffdd55;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+
+/* ============================================================
+   INTRO SECCIÓN AMARILLA
+============================================================ */
+.intro-section {
+    background: #FFF6E7;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.intro-text {
+    font-family: 'Lilita One', sans-serif;
+    color: #ffb347;
+    font-size: clamp(3.2rem, 7vw, 5rem);
+    max-width: 1400px;
+    margin: 0 auto;
+    line-height: 1.1;
+}
+
+
+
+/* ============================================================
+   SECCIÓN VERDE — EDITORIAL
+============================================================ */
+.veggie-section {
+    background-color: #1E5A33;
+    padding: 35px 20px 50px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../images/zanahoria-verde.png");
+    background-repeat: repeat;
+    background-size: 300px;
+    background-position: center;
+}
+
+.veggie-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 90, 51, 0.45);
+}
+
+.veggie-text {
+    font-family: 'Lilita One', sans-serif;
+    color: #fff6e7;
+    text-align: justify;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    line-height: 1.35;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+/* ============================================================
+   SECCIÓN NARANJA EDITORIAL
+============================================================ */
+.orange-section {
+    background: #ffb347;
+    padding: 60px 20px 120px;
+    color: #fff6e7;
+}
+
+.orange-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.orange-title {
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 800;
+    text-align: justify;
+}
+
+.orange-body {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+
+/* ============================================================
+   SECCIÓN BEIGE — INTRO
+============================================================ */
+.beige-section {
+    background: #FFF6E7;
+    padding: 120px 20px;
+}
+
+.beige-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.beige-text {
+    font-family: 'Lilita One', sans-serif;
+    color: #1E5A33;
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+
+
+/* ============================================================
+   RESTAURANTES HISTÓRICOS — FULL WIDTH
+============================================================ */
+.restaurantes-historicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.rest-box {
+    padding: 90px 60px 120px;
+    color: #FFF6E7;
+    display: flex;
+    flex-direction: column;
+}
+
+.rest-box.naranja { background-color: #ffb347; }
+.rest-box.verde   { background-color: #143B24; }
+
+.rest-title {
+    font-family: 'Lilita One', sans-serif;
+    font-size: clamp(2rem, 3.4vw, 3rem);
+    text-align: center;
+}
+
+.rest-year {
+    font-family: 'Lilita One', sans-serif;
+    font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rest-desc {
+    font-size: clamp(1.05rem, 1.7vw, 1.6rem);
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .restaurantes-historicos {
+        grid-template-columns: 1fr;
+    }
+
+    .rest-box {
+        padding: 70px 35px 90px;
+    }
+}
+
+
+
+/* ============================================================
+   BOTÓN VEREDICTO FINAL
+============================================================ */
+.veredicto-btn {
+    margin-top: 40px;
+    padding: 16px 28px;
+    background-color: #FFF6E7;
+    color: #143B24;
+    border: none;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.25s ease;
+    align-self: center;
+}
+
+.veredicto-btn:hover {
+    background-color: #ffe1b3;
+    transform: scale(1.07);
+}
+
+
+
+/* ============================================================
+   MODAL — SOLO CSS
+============================================================ */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-content {
+    background: #FFF6E7;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    color: #143B24;
+    font-family: 'Figtree', sans-serif;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-close {
+    margin-top: 20px;
+    display: inline-block;
+    background: #143B24;
+    color: #FFF6E7;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.modal-close:hover {
+    background: #1E5A33;
+}
+
+
+/* ============================================================
+   ESTRELLAS 2D — EFECTO POP
+============================================================ */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.star-rating span {
+    font-size: 2rem;
+    color: #ffb347;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.star-rating span:hover {
+    transform: scale(1.25);
+    filter: brightness(1.2);
+}
+
+/* ============================================================
+   ALINEAR BOTONES "VEREDICTO FINAL" A LA MISMA ALTURA
+============================================================ */
+
+/* Asegura que cada columna distribuya su contenido verticalmente */
+/* ============================================================
+   ALINEAR BOTONES Y BAJARLOS UN POCO MÁS
+============================================================ */
+
+.rest-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botón perfectamente alineado + más abajo */
+.veredicto-btn {
+    margin-top: auto;       /* empuja hacia el fondo */
+    margin-bottom: 100px;    /* antes era 40px → ahora baja más */
+}
+/* ============================================================
+   AJUSTE DE ALTURA — BOTONES ALINEADOS Y MÁS ABAJO
+============================================================ */
+
+.restaurantes-historicos {
+    align-items: stretch; /* todas las columnas misma altura */
+}
+
+.rest-box {
+    padding: 90px 60px 200px; /* baja visualmente el botón */
+}
+
+.veredicto-btn {
+    margin-top: auto;         /* empuja el botón hacia abajo */
+    margin-bottom: 40px;      /* espacio final bajo el botón */
+}
+/* ============================================================
+   ALINEACIÓN REAL DE BOTONES
+============================================================ */
+
+/* 1. Asegura que cada columna sea un flex vertical */
+.rest-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;     /* fuerza todas las columnas a igualar altura */
+    padding-bottom: 220px !important; /* desplaza hacia abajo todo */
+}
+
+/* 2. Asegura que el contenedor iguale alturas */
+.restaurantes-historicos {
+    align-items: stretch; /* las columnas estiran al mismo alto */
+}
+
+/* 3. Botón SIEMPRE al fondo */
+.veredicto-btn {
+    margin-top: auto !important;  /* empuja hacia el fondo */
+    margin-bottom: 60px !important; /* baja aún más el botón */
+}
+/* ============================================================
+   ALINEACIÓN Y ESPACIOS CORREGIDOS DE BOTONES
+============================================================ */
+
+/* 1. Asegura que cada columna sea flex vertical y alturas iguales */
+.rest-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding-bottom: 120px !important;  /* antes 220px → ahora equilibrado */
+}
+
+/* 2. Fuerza a que todas las columnas tengan la misma altura */
+.restaurantes-historicos {
+    align-items: stretch;
+}
+
+/* 3. Botón SIEMPRE al fondo */
+.veredicto-btn {
+    margin-top: 40px !important;   /* separa el botón del texto */
+    margin-bottom: 60px !important; /* espacio inferior más moderado */
+    align-self: center;
+}
+.green-body-large {
+    font-family: 'Figtree', sans-serif;
+    color: #0c5224; /* el mismo verde de tu sitio */
+    font-size: 1.45rem; /* más grande que el párrafo normal */
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 50px auto;
+    max-width: 900px; /* igual que tus párrafos actuales */
+    text-align: left;
+}
+.green-body-large {
+    font-family: 'Figtree', sans-serif;
+    color: #1E5A33; /* verde */
+    font-size: clamp(1.4rem, 2vw, 1.9rem);
+    line-height: 1.6;
+    margin: 30px auto 0;  /* ← centra el párrafo igual que el anterior */
+    width: 90%;
+    max-width: 1400px;    /* ← mismo ancho que “beige-text” */
+}
+.green-body-large {
+    font-family: 'Figtree', sans-serif;
+    color: #1E5A33;
+    font-size: clamp(1.4rem, 2vw, 1.9rem);
+    line-height: 1.6;
+
+    /* alineación con el párrafo anterior */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    padding: 0;
+    display: block;
+}
+.green-body-large {
+    text-align: justify !important;
+}
+/* ======= FICHAS BEIGE ======= */
+.fichas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 25px;
+}
+
+.ficha {
+    background: #f7f0e6;
+    padding: 18px;
+    border-radius: 14px;
+}
+
+.ficha-title {
+    font-family: 'Figtree', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* ======= BEIGE SUBTITLES ======= */
+.beige-subtitle {
+    font-family: 'Figtree', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* ======= CARRUSEL ======= */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 14px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffffd8;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s;
+}
+
+.carousel-btn:hover {
+    background: #fff;
+}
+
+.carousel-btn.prev { left: 8px; }
+.carousel-btn.next { right: 8px; }
+/* ------------------------------------------------------------
+   SECCIÓN DE SABORES — MISMA ESTÉTICA QUE LA SECCIÓN NARANJA
+------------------------------------------------------------ */
+#fichas-sabores.beige-section {
+    background: #ffb347 !important;   /* Fondo naranjo */
+}
+
+#fichas-sabores .beige-subtitle {
+    font-family: 'Lilita One', sans-serif;  /* Igual que la sección naranja */
+    font-size: clamp(2.4rem, 5vw, 4rem);     /* Tamaño igual al título naranja */
+    color: #fff6e7 !important;              /* Blanco */
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+#fichas-sabores .beige-text {
+    font-family: 'Figtree', sans-serif;      /* Igual que orange-body */
+    font-size: clamp(1.2rem, 2vw, 1.8rem);   /* Tamaño igual que orange-body */
+    color: #fff6e7 !important;               /* Blanco */
+    line-height: 1.55;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+/* ============================================================
+   SECCIÓN RANKING AJUSTADA AL ESTILO VERDE
+============================================================ */
+
+.ranking-section {
+    background-color: #1E5A33;  /* mismo fondo verde oscuro */
+    padding: 100px 20px;
+    color: #FFF6E7; /* texto blanco */
+}
+
+.ranking-container {
+    width: 90%;
+    max-width: 1400px; /* mismo ancho del resto */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título en naranja tipo Lilita One grande */
+.ranking-title {
+    font-family: 'Lilita One', sans-serif;
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    color: #ffb347; /* naranja */
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+/* Párrafos en blanco tipo Figtree */
+.ranking-text {
+    font-family: 'Figtree', sans-serif;
+    font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+    line-height: 1.6;
+    color: #FFF6E7;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ============================================================
+   SECCIÓN RANKING — MISMOS ESTILOS QUE SECCIÓN VERDE
+============================================================ */
+.green-section-ranking {
+    background-color: #1E5A33; /* mismo verde */
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.green-container-ranking {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Título naranja */
+.ranking-title {
+    font-family: 'Lilita One', sans-serif;
+    color: #ffb347;
+    font-size: clamp(1.6rem, 4.5vw, 3.8rem);
+    font-weight: 600;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+/* Párrafos blancos justificados */
+.ranking-text {
+    font-family: 'Figtree', sans-serif;
+    color: #FFF6E7;
+    font-size: clamp(1.4rem, 2vw, 1.9rem);
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+/* Ajustar el gráfico de ranking */
+.ranking-chart {
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    max-width: 800px; /* O el tamaño máximo que desees */
+    display: block; /* Asegura que se centre */
+    margin: 30px auto; /* Centrado con un margen arriba y abajo */
+    border-radius: 8px; /* Bordes redondeados si lo deseas */
+}
+
+/* ============================================
+   RECEIPT / SERVILLETTE STYLE BLOCK
+============================================ */
+
+/* ===== RECEIPT CON TEXTURA REAL ===== */
+.receipt-box {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 60px;
+
+    /* FONDO LISO — QUEDA SOLO COLOR */
+    background-color: #FFF6E7 !important;
+    background-image: none !important;
+
+    border-radius: 12px;
+
+
+    /* efecto boleta térmica */
+    filter: contrast(1.05) brightness(1.08);
+
+    /* sombra sutil para levantarlo del fondo */
+    box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+
+    font-family: 'Figtree', sans-serif;
+    color: #333;
+}
+
+/* título del recibo */
+.receipt-title {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* franja punteada */
+.receipt-dots {
+    border-top: 2px dotted #555;
+    margin: 20px 0;
+}
+
+/* texto */
+.receipt-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+/* estrellas del ranking */
+.stars {
+    color: #ffb347;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+.footer-ruta {
+    background-color: #143B24;   /* Verde oscuro de tu sitio */
+    color: #FFF6E7;              /* Blanco cálido */
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.footer-ruta a {
+    color: #FFF6E7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-ruta a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
